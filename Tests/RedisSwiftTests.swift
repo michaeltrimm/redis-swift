@@ -17,14 +17,14 @@ class RedisSwiftTests : XCTestCase {
     override func setUp(){
         super.setUp()
         
-        redis = Redis(address: "localhost", port: 6379)
+        self.redis = Redis(address: "localhost", port: 6379)
         
         XCTAssert(redis != nil)
     }
     
     func testSetKey(){
         
-        let set:Bool = Redis.set(keyName: self.testKey, value: self.testValue)
+        let set:Bool = self.redis.set(keyName: self.testKey, value: self.testValue)
         
         XCTAssert(set == true)
         
@@ -32,7 +32,7 @@ class RedisSwiftTests : XCTestCase {
     
     func testGetKey(){
         
-        let get:String? = Redis.get(keyName: self.testKey)
+        let get:String? = self.redis.get(keyName: self.testKey)
         
         XCTAssert(get == testValue)
         
@@ -40,7 +40,7 @@ class RedisSwiftTests : XCTestCase {
     
     func testDeleteKey(){
         
-        let del: Bool = Redis.delete(keyName: self.testKey)
+        let del: Bool = self.redis.delete(keyName: self.testKey)
         
         XCTAssert(del == true)
         
