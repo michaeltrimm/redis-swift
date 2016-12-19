@@ -1,0 +1,80 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		4CAF79B21E0828820058C8A3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		4CAF79B31E0828AA0058C8A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4CAF79B41E0828B90058C8A3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4CAF79B51E0829060058C8A3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4CAF79B61E0829B00058C8A3 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sources; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4CAF79AB1E0828760058C8A3 = {
+			isa = PBXGroup;
+			children = (
+				4CAF79B61E0829B00058C8A3 /* Sources */,
+				4CAF79B51E0829060058C8A3 /* .gitignore */,
+				4CAF79B41E0828B90058C8A3 /* LICENSE */,
+				4CAF79B21E0828820058C8A3 /* Package.swift */,
+				4CAF79B31E0828AA0058C8A3 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		4CAF79AC1E0828760058C8A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+			};
+			buildConfigurationList = 4CAF79AF1E0828760058C8A3 /* Build configuration list for PBXProject "RedisSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CAF79AB1E0828760058C8A3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		4CAF79B01E0828760058C8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4CAF79B11E0828760058C8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CAF79AF1E0828760058C8A3 /* Build configuration list for PBXProject "RedisSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CAF79B01E0828760058C8A3 /* Debug */,
+				4CAF79B11E0828760058C8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CAF79AC1E0828760058C8A3 /* Project object */;
+}
