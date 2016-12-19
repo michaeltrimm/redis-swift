@@ -22,22 +22,39 @@ public class Redis {
     
     public func get(keyName: String) -> String? {
         let cmd = "GET \(keyName)"
+        
+        do {
+            let (headerData, bodyData) = try self.performAction(command: cmd)
+        } catch PerformError.curlError {
+            return nil
+        }
     }
     
-    public func set(keyName: String, value: String){
+    public func set(keyName: String, value: String) -> Bool {
         let cmd = "SET \(keyName) \(value)"
+        
+        do {
+            let (headerData, bodyData) = try self.performAction(command: cmd)
+        } catch PerformError.curlError {
+            return false
+        }
     }
     
-    public func delete(keyName: String){
+    public func delete(keyName: String) -> Bool {
         let cmd = "DEL \(keyName)"
-        let (headerData, bodyData) = self.performAction(command: cmd)
+        
+        do {
+            let (headerData, bodyData) = try self.performAction(command: cmd)
+        } catch PerformError.curlError {
+            return false
+        }
     }
     
     public enum PerformError : Error {
         case curlError(Int, Data, Data)
     }
     
-    private func performAction(command: String, verbose: Bool = false) -> (responseHeaderData, responseBodyData) {
+    private func performAction(command: String, verbose: Bool = false) throws -> (responseHeaderData, responseBodyData) {
         
         let url = "tcp://\(self.server):\(self.port)"
         let curl = CURL(url: url)
