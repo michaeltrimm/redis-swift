@@ -12,12 +12,14 @@
 		4CAF79B41E0828B90058C8A3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4CAF79B51E0829060058C8A3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4CAF79B61E0829B00058C8A3 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sources; sourceTree = "<group>"; };
+		4CAF79B71E0849E50058C8A3 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		4CAF79AB1E0828760058C8A3 = {
 			isa = PBXGroup;
 			children = (
+				4CAF79B71E0849E50058C8A3 /* Tests */,
 				4CAF79B61E0829B00058C8A3 /* Sources */,
 				4CAF79B51E0829060058C8A3 /* .gitignore */,
 				4CAF79B41E0828B90058C8A3 /* LICENSE */,
