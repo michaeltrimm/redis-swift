@@ -15,7 +15,7 @@ public class Redis {
     public let server: String
     public var port: Int
     
-    public init(address: String, port: Int = 6379){
+    public init(address: String = "localhost", port: Int = 6379){
         self.server = address
         self.port = port
     }
