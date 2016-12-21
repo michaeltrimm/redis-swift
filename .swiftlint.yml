@@ -1,0 +1,10 @@
+disabled_rules:
+- file_length
+- function_parameter_count
+- cyclomatic_complexity
+opt_in_rules:
+- force_unwrapping
+included:
+- Sources/
+- Tests/
+operator_whitespace: error
