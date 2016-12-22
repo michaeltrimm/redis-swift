@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		4C73D2211E0AE5E5007439A0 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		4C73D2221E0AE63D007439A0 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		4CAF79B21E0828820058C8A3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		4CAF79B31E0828AA0058C8A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4CAF79B41E0828B90058C8A3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -19,6 +21,8 @@
 		4CAF79AB1E0828760058C8A3 = {
 			isa = PBXGroup;
 			children = (
+				4C73D2221E0AE63D007439A0 /* .swiftlint.yml */,
+				4C73D2211E0AE5E5007439A0 /* .swift-version */,
 				4CAF79B71E0849E50058C8A3 /* Tests */,
 				4CAF79B61E0829B00058C8A3 /* Sources */,
 				4CAF79B51E0829060058C8A3 /* .gitignore */,

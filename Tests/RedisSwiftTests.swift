@@ -22,48 +22,44 @@
 
 import Redis
 
-class RedisSwiftTests : XCTestCase {
-    
+class RedisSwiftTests: XCTestCase {
+
     let redis: Redis
     let testKey = "myFancyKey"
     let testValue = "something super awesome here"
-    
-    override func setUp(){
+
+    override func setUp() {
+
         super.setUp()
-        
+
         self.redis = Redis(address: "localhost", port: 6379)
-        
+
         XCTAssert(redis != nil)
+
     }
-    
-    func testSetKey(){
-        
-        let set:Bool = redis.set(keyName: testKey, value: testValue)
-        
+
+    func testSetKey() {
+
+        let set: Bool = redis.set(keyName: testKey, value: testValue)
+
         XCTAssert(set == true)
-        
+
     }
-    
-    func testGetKey(){
-        
-        let get:String? = redis.get(keyName: testKey)
-        
+
+    func testGetKey() {
+
+        let get: String? = redis.get(keyName: testKey)
+
         XCTAssert(get == testValue)
-        
+
     }
-    
-    func testDeleteKey(){
-        
+
+    func testDeleteKey() {
+
         let del: Bool = redis.delete(keyName: testKey)
-        
+
         XCTAssert(del == true)
-        
+
     }
-    
-    override func tearDown(){
-        
-        // nothing to tear down
-        
-    }
-    
+
 }
