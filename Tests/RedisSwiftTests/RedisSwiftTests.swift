@@ -20,15 +20,24 @@
  * THE SOFTWARE.
  */
 
-import Redis
+import XCTest
+@testable import Redis
 
 class RedisSwiftTests: XCTestCase {
 
+    static var allTests: [(String, (RedisSwiftTests) -> () throws -> Void)] {
+        return [
+            ("testSetKey", testSetKey),
+            ("testGetKey", testGetKey),
+            ("testDeleteKey", testDeleteKey)
+        ]
+    }
+    
     let redis: Redis
     let testKey = "myFancyKey"
     let testValue = "something super awesome here"
 
-    override func setUp() {
+    override func setUp() throws {
 
         super.setUp()
 
@@ -38,7 +47,7 @@ class RedisSwiftTests: XCTestCase {
 
     }
 
-    func testSetKey() {
+    func testSetKey() throws {
 
         let set: Bool = redis.set(keyName: testKey, value: testValue)
 
@@ -46,7 +55,7 @@ class RedisSwiftTests: XCTestCase {
 
     }
 
-    func testGetKey() {
+    func testGetKey() throws {
 
         let get: String? = redis.get(keyName: testKey)
 
@@ -54,7 +63,7 @@ class RedisSwiftTests: XCTestCase {
 
     }
 
-    func testDeleteKey() {
+    func testDeleteKey() throws {
 
         let del: Bool = redis.delete(keyName: testKey)
 

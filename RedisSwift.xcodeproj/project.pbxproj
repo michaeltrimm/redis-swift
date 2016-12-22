@@ -1,86 +1,384 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXFileReference section */
-		4C73D2211E0AE5E5007439A0 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
-		4C73D2221E0AE63D007439A0 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
-		4CAF79B21E0828820058C8A3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		4CAF79B31E0828AA0058C8A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4CAF79B41E0828B90058C8A3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		4CAF79B51E0829060058C8A3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		4CAF79B61E0829B00058C8A3 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sources; sourceTree = "<group>"; };
-		4CAF79B71E0849E50058C8A3 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXGroup section */
-		4CAF79AB1E0828760058C8A3 = {
-			isa = PBXGroup;
-			children = (
-				4C73D2221E0AE63D007439A0 /* .swiftlint.yml */,
-				4C73D2211E0AE5E5007439A0 /* .swift-version */,
-				4CAF79B71E0849E50058C8A3 /* Tests */,
-				4CAF79B61E0829B00058C8A3 /* Sources */,
-				4CAF79B51E0829060058C8A3 /* .gitignore */,
-				4CAF79B41E0828B90058C8A3 /* LICENSE */,
-				4CAF79B21E0828820058C8A3 /* Package.swift */,
-				4CAF79B31E0828AA0058C8A3 /* README.md */,
-			);
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXProject section */
-		4CAF79AC1E0828760058C8A3 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0800;
-			};
-			buildConfigurationList = 4CAF79AF1E0828760058C8A3 /* Build configuration list for PBXProject "RedisSwift" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 4CAF79AB1E0828760058C8A3;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-			);
-		};
-/* End PBXProject section */
-
-/* Begin XCBuildConfiguration section */
-		4CAF79B01E0828760058C8A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		4CAF79B11E0828760058C8A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		4CAF79AF1E0828760058C8A3 /* Build configuration list for PBXProject "RedisSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4CAF79B01E0828760058C8A3 /* Debug */,
-				4CAF79B11E0828760058C8A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 4CAF79AC1E0828760058C8A3 /* Project object */;
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_PerfectThread, ______Target_PerfectCURL, ______Target_RedisSwift, ______Target_RedisSwiftTests);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_,  Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        _______Group_PerfectThread = {
+            isa = PBXGroup;
+            name = 'PerfectThread';
+            path = 'Packages/PerfectThread-2.0.3/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/PerfectThread-2.0.3/Sources/Threading.swift', '__PBXFileRef_Packages/PerfectThread-2.0.3/Sources/ThreadQueue.swift');
+        };
+        '__PBXFileRef_Packages/PerfectThread-2.0.3/Sources/Threading.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Threading.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/PerfectThread-2.0.3/Sources/ThreadQueue.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'ThreadQueue.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_PerfectThread = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_PerfectThread;
+            buildPhases = (CompilePhase_PerfectThread, ___LinkPhase_PerfectThread);
+            buildRules = ();
+            dependencies = ();
+            name = 'PerfectThread';
+            productName = PerfectThread;
+            productReference = _____Product_PerfectThread;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_PerfectThread = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'PerfectThread.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_PerfectThread = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/PerfectThread-2.0.3/Sources/Threading.swift', '__src_cc_ref_Packages/PerfectThread-2.0.3/Sources/ThreadQueue.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/PerfectThread-2.0.3/Sources/Threading.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/PerfectThread-2.0.3/Sources/Threading.swift';
+        };
+        '__src_cc_ref_Packages/PerfectThread-2.0.3/Sources/ThreadQueue.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/PerfectThread-2.0.3/Sources/ThreadQueue.swift';
+        };
+        ___LinkPhase_PerfectThread = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_PerfectThread = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_PerfectThread, _ReleaseConf_PerfectThread);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_PerfectThread = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'RedisSwift.xcodeproj/PerfectThread_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectThread'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_PerfectThread = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'RedisSwift.xcodeproj/PerfectThread_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectThread'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_PerfectThread = {
+            isa = PBXTargetDependency;
+            target = ______Target_PerfectThread;
+        };
+        _______Group_PerfectCURL = {
+            isa = PBXGroup;
+            name = 'PerfectCURL';
+            path = 'Packages/PerfectCURL-2.0.1/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/PerfectCURL-2.0.1/Sources/cURL.swift');
+        };
+        '__PBXFileRef_Packages/PerfectCURL-2.0.1/Sources/cURL.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'cURL.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_PerfectCURL = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_PerfectCURL;
+            buildPhases = (CompilePhase_PerfectCURL, ___LinkPhase_PerfectCURL);
+            buildRules = ();
+            dependencies = (__Dependency_PerfectThread);
+            name = 'PerfectCURL';
+            productName = PerfectCURL;
+            productReference = _____Product_PerfectCURL;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_PerfectCURL = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'PerfectCURL.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_PerfectCURL = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/PerfectCURL-2.0.1/Sources/cURL.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/PerfectCURL-2.0.1/Sources/cURL.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/PerfectCURL-2.0.1/Sources/cURL.swift';
+        };
+        ___LinkPhase_PerfectCURL = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_PerfectThread_via_PerfectCURL);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_PerfectThread_via_PerfectCURL = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_PerfectThread;
+        };
+        _______Confs_PerfectCURL = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_PerfectCURL, _ReleaseConf_PerfectCURL);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_PerfectCURL = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited) -I/usr/include'; INFOPLIST_FILE = 'RedisSwift.xcodeproj/PerfectCURL_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; HEADER_SEARCH_PATHS = '/Users/michael/Dropbox/2016-2017 Github/redis-swift/RedisSwift/Packages/cURL-2.0.0'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectCURL'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited) -L/usr/lib -lcurl'; };
+            name = Debug;
+        };
+        _ReleaseConf_PerfectCURL = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited) -I/usr/include'; INFOPLIST_FILE = 'RedisSwift.xcodeproj/PerfectCURL_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/michael/Dropbox/2016-2017 Github/redis-swift/RedisSwift/Packages/cURL-2.0.0'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectCURL'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited) -L/usr/lib -lcurl'; };
+            name = Release;
+        };
+        __Dependency_PerfectCURL = {
+            isa = PBXTargetDependency;
+            target = ______Target_PerfectCURL;
+        };
+        _______Group_RedisSwift = {
+            isa = PBXGroup;
+            name = 'RedisSwift';
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/RedisSwift.swift');
+        };
+        '__PBXFileRef_Sources/RedisSwift.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'RedisSwift.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_RedisSwift = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_RedisSwift;
+            buildPhases = (CompilePhase_RedisSwift, ___LinkPhase_RedisSwift);
+            buildRules = ();
+            dependencies = (__Dependency_PerfectThread, __Dependency_PerfectCURL);
+            name = 'RedisSwift';
+            productName = RedisSwift;
+            productReference = _____Product_RedisSwift;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_RedisSwift = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'RedisSwift.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_RedisSwift = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/RedisSwift.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/RedisSwift.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/RedisSwift.swift';
+        };
+        ___LinkPhase_RedisSwift = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_PerfectThread_via_RedisSwift, _LinkFileRef_PerfectCURL_via_RedisSwift);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_PerfectThread_via_RedisSwift = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_PerfectThread;
+        };
+        _LinkFileRef_PerfectCURL_via_RedisSwift = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_PerfectCURL;
+        };
+        _______Confs_RedisSwift = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_RedisSwift, _ReleaseConf_RedisSwift);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_RedisSwift = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited) -I/usr/include'; INFOPLIST_FILE = 'RedisSwift.xcodeproj/RedisSwift_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; HEADER_SEARCH_PATHS = '/Users/michael/Dropbox/2016-2017 Github/redis-swift/RedisSwift/Packages/cURL-2.0.0'; PRODUCT_BUNDLE_IDENTIFIER = 'RedisSwift'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited) -L/usr/lib -lcurl'; };
+            name = Debug;
+        };
+        _ReleaseConf_RedisSwift = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited) -I/usr/include'; INFOPLIST_FILE = 'RedisSwift.xcodeproj/RedisSwift_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/michael/Dropbox/2016-2017 Github/redis-swift/RedisSwift/Packages/cURL-2.0.0'; PRODUCT_BUNDLE_IDENTIFIER = 'RedisSwift'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited) -L/usr/lib -lcurl'; };
+            name = Release;
+        };
+        __Dependency_RedisSwift = {
+            isa = PBXTargetDependency;
+            target = ______Target_RedisSwift;
+        };
+        _______Group_RedisSwiftTests = {
+            isa = PBXGroup;
+            name = 'RedisSwiftTests';
+            path = 'Tests/RedisSwiftTests';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/RedisSwiftTests/RedisSwiftTests.swift');
+        };
+        '__PBXFileRef_Tests/RedisSwiftTests/RedisSwiftTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'RedisSwiftTests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_RedisSwiftTests = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_RedisSwiftTests;
+            buildPhases = (CompilePhase_RedisSwiftTests, ___LinkPhase_RedisSwiftTests);
+            buildRules = ();
+            dependencies = (__Dependency_PerfectThread, __Dependency_PerfectCURL, __Dependency_RedisSwift);
+            name = 'RedisSwiftTests';
+            productName = RedisSwiftTests;
+            productReference = _____Product_RedisSwiftTests;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_RedisSwiftTests = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'RedisSwiftTests.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_RedisSwiftTests = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/RedisSwiftTests/RedisSwiftTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/RedisSwiftTests/RedisSwiftTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/RedisSwiftTests/RedisSwiftTests.swift';
+        };
+        ___LinkPhase_RedisSwiftTests = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_PerfectThread_via_RedisSwiftTests, _LinkFileRef_PerfectCURL_via_RedisSwiftTests, _LinkFileRef_RedisSwift_via_RedisSwiftTests);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_PerfectThread_via_RedisSwiftTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_PerfectThread;
+        };
+        _LinkFileRef_PerfectCURL_via_RedisSwiftTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_PerfectCURL;
+        };
+        _LinkFileRef_RedisSwift_via_RedisSwiftTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_RedisSwift;
+        };
+        _______Confs_RedisSwiftTests = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_RedisSwiftTests, _ReleaseConf_RedisSwiftTests);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_RedisSwiftTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/michael/Dropbox/2016-2017 Github/redis-swift/RedisSwift/Packages/cURL-2.0.0'; OTHER_SWIFT_FLAGS = '$(inherited) -I/usr/include'; INFOPLIST_FILE = 'RedisSwift.xcodeproj/RedisSwiftTests_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited) -L/usr/lib -lcurl'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_RedisSwiftTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/michael/Dropbox/2016-2017 Github/redis-swift/RedisSwift/Packages/cURL-2.0.0'; OTHER_SWIFT_FLAGS = '$(inherited) -I/usr/include'; INFOPLIST_FILE = 'RedisSwift.xcodeproj/RedisSwiftTests_Info.plist'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited) -L/usr/lib -lcurl'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_RedisSwiftTests = {
+            isa = PBXTargetDependency;
+            target = ______Target_RedisSwiftTests;
+        };
+        '__PBXFileRef_RedisSwift.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'RedisSwift.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_RedisSwift.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_PerfectThread, _______Group_PerfectCURL, _______Group_RedisSwift);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        Dependencies_ = {
+            isa = PBXGroup;
+            children = (_______Group_PerfectCURL, _______Group_PerfectThread);
+            name = Dependencies;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_RedisSwiftTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_RedisSwiftTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_PerfectThread, _____Product_PerfectCURL, _____Product_RedisSwift);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_RedisSwift.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_RedisSwift.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
 }

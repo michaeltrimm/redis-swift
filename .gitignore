@@ -4,6 +4,7 @@
 build/
 DerivedData
 test_output
+.build
 
 ## Various settings
 *.pbxuser
